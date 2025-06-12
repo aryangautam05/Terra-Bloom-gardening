@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy | Terra Bloom Gardening</title>
+  <meta name="description" content="Privacy Policy for Terra Bloom Gardening. Learn about how we collect, use, and protect your data." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <style>
+    /* Same CSS as index.html, adjusted for privacy page */
+    :root {
+      --color-forest-dark: #1b3a24;
+      --color-forest-medium: #2e5f3a;
+      --color-forest-light: #71a478;
+      --color-earth: #e9f1de;
+      --color-text-primary: #2f4f4f;
+      --color-text-secondary: #6b7280;
+      --color-bg: #f4f9f4;
+      --color-accent: #3a9d23;
+      --color-white: #fff;
+      --shadow-light: 0 4px 12px rgba(0,0,0,0.07);
+      --border-radius: 12px;
+      --spacing-unit: 16px;
+      --font-family-primary: 'Inter', sans-serif;
+      --font-family-secondary: 'Poppins', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font-family-primary);
+      background: var(--color-bg);
+      color: var(--color-text-primary);
+      line-height: 1.6;
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+    a {
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover, a:focus {
+      color: var(--color-forest-medium);
+      outline: none;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 64px;
+    }
+    header {
+      background: var(--color-forest-dark);
+      color: var(--color-white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    nav.header-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 90%;
+    }
+    .logo {
+      font-family: var(--font-family-secondary);
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--color-earth);
+      letter-spacing: 1.2px;
+      user-select: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: var(--color-earth);
+      padding: 8px 16px;
+      border-radius: var(--border-radius);
+      font-weight: 600;
+      font-size: 1rem;
+      background: transparent;
+      transition: background-color 0.3s ease;
+    }
+    .nav-links a:hover, .nav-links a:focus {
+      background: var(--color-forest-medium);
+      outline: none;
+    }
+    .mobile-menu-button {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--color-earth);
+      font-size: 2rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    .mobile-menu-button:hover, .mobile-menu-button:focus {
+      color: var(--color-accent);
+      outline: none;
+    }
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background: var(--color-forest-dark);
+      padding: 1rem;
+    }
+    .mobile-nav a {
+      color: var(--color-earth);
+      padding: 12px 0;
+      border-bottom: 1px solid var(--color-forest-medium);
+      font-weight: 600;
+      display: block;
+    }
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, #2e5f3a, #71a478 80%);
+      color: var(--color-earth);
+      padding: 120px 0 80px;
+      overflow: hidden;
+      text-align: center;
+      user-select: none;
+    }
+    .hero h1 {
+      font-family: var(--font-family-secondary);
+      font-size: 3.5rem;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 8px rgba(26,44,14,0.7);
+    }
+    .content-section {
+      background: var(--color-white);
+      border-radius: var(--border-radius);
+      padding: 48px 32px;
+      box-shadow: var(--shadow-light);
+      margin-bottom: 64px;
+    }
+    .content-section h2 {
+      font-size: 2.25rem;
+      color: var(--color-forest-dark);
+      margin-bottom: 24px;
+    }
+    .content-section h3 {
+      font-size: 1.5rem;
+      color: var(--color-forest-medium);
+      margin: 32px 0 16px;
+    }
+    .content-section p {
+      color: var(--color-text-primary);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 12px;
+      text-align: justify;
+    }
+    footer {
+      background: var(--color-forest-dark);
+      color: var(--color-earth);
+      padding: 48px 16px 48px;
+      font-size: 0.9rem;
+    }
+    footer .container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    footer .address {
+      font-weight: 600;
+      color: var(--color-earth);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    footer .phone {
+      font-weight: 600;
+      color: var(--color-earth);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    footer .disclaimer {
+      opacity: 0.8;
+      line-height: 1.4;
+      max-width: 720px;
+    }
+    @media (max-width: 767px) {
+      .nav-links {
+        display: none;
+      }
+      .mobile-menu-button {
+        display: block;
+      }
+      .mobile-nav.show {
+        display: flex;
+      }
+      header nav.header-nav {
+        width: 90%;
+        padding: 0.5rem 0.5rem;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .content-section {
+        padding: 32px 16px;
+        margin-bottom: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header role="banner" aria-label="Primary Navigation">
+    <nav class="header-nav container" role="navigation" aria-label="Main navigation">
+      <div class="logo" tabindex="0">Terra Bloom Gardening</div>
+      <div class="nav-links">
+        <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0"aria-current="page">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+      </div>
+      <button class="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" id="mobile-menu-button">
+        <span class="material-icons" aria-hidden="true">menu</span>
+      </button>
+    </nav>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile Main navigation">
+     <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0"aria-current="page">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+    </nav>
+  </header>
+
+  <section class="hero" role="region" aria-label="Privacy Policy header">
+    <h1>Privacy Policy</h1>
+    <p>Your privacy is important to Terra Bloom Gardening. Read on to learn how we handle your information responsibly and transparently.</p>
+  </section>
+
+  <main class="container" role="main">
+    <section class="content-section" aria-label="Privacy Policy details">
+      <h2>Our Privacy Commitment</h2>
+      <p>Terra Bloom Gardening is committed to protecting your privacy and ensuring that your personal data is handled securely and transparently. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or use our services. We adhere to relevant data protection regulations to maintain your trust.</p>
+
+      <!-- 40 points each with 10 lines approximately: -->
+      <h3>1. Information We Collect</h3>
+      <p>We collect information you provide directly such as contact details and preferences, and data collected automatically through usage analytics and cookies. This information is essential to deliver and improve our gardening and landscaping service experience. It also helps personalize your interactions with us. We maintain transparency in the data we collect and give you control where feasible.</p>
+
+      <h3>2. Use of Collected Information</h3>
+      <p>Your data is used responsibly to fulfill service requests, maintain communication, conduct marketing only with your consent, and comply with legal mandates. It enables Terra Bloom Gardening to enhance service quality and tailor offerings to customer preferences. We do not use your data for unrelated or unfair purposes.</p>
+
+      <h3>3. Cookies and Tracking Technologies</h3>
+      <p>Our website employs cookies to improve functionality, analyze user behavior, and tailor your browsing experience. These cookies do not contain personally identifiable data unless voluntarily provided. You can always manage cookie preferences through your browser settings to opt out fully or partially.</p>
+
+      <h3>4. Sharing of Information</h3>
+      <p>We never sell or trade your personal information. Sharing occurs only with trusted third parties aiding business operations such as hosting, payment processing, and communication, bound by confidentiality agreements. We may disclose information when legally required to do so to protect rights or comply with law enforcement requests.</p>
+
+      <h3>5. Data Security</h3>
+      <p>We protect your data using robust security systems including encrypted transmissions, secure servers, and limited internal access. Regular audits and updates safeguard your personal information against unauthorized use or breaches. Your trust in our security measures is paramount.</p>
+
+      <h3>6. Your Rights</h3>
+      <p>You hold the right to access, correct, or delete your personal information processed by us. Additionally, you may restrict processing or object to certain uses based on applicable laws. We are committed to facilitating these privacy rights promptly and transparently, providing contact channels for assistance.</p>
+
+      <h3>7. Data Retention</h3>
+      <p>Your data is kept only as long as necessary to provide services, meet legal obligations, or resolve disputes. Once obsolete, personal data is securely erased or anonymized to maintain data protection and privacy. Our retention policies reflect best practices and legal compliance.</p>
+
+      <h3>8. International Transfers</h3>
+      <p>If your information is transferred beyond your jurisdiction, Terra Bloom Gardening uses legal safeguards including standard contractual clauses to store and process data securely overseas. This ensures your privacy rights remain protected no matter where data is handled.</p>
+
+      <h3>9. Children's Privacy</h3>
+      <p>Our services target adults and we do not knowingly collect data from children under 13 years old without parental consent. Any information discovered to have been collected unintentionally from minors will be promptly deleted to adhere to child privacy protections.</p>
+
+      <h3>10. Communication Preferences</h3>
+      <p>You have full control over promotional communications we send. You can opt out of newsletters and marketing emails at any time via unsubscribe links or direct requests. We respect your preferences and ensure compliance with your communication choices.</p>
+
+      <h3>11. Third-Party Links</h3>
+      <p>Our site may link to external services or partners. Terra Bloom Gardening is not responsible for these sites’ content, privacy policies, or practices. We encourage you to read third-party policies before providing any personal information while browsing.</p>
+
+      <h3>12. Service Providers</h3>
+      <p>We contract with dependable third-party vendors to assist with operations such as hosting, payment processing, and customer support. These parties are required to uphold confidentiality and comply with data protection laws to maintain your data security.</p>
+
+      <h3>13. Website Usage Data</h3>
+      <p>We automatically collect usage data such as IP addresses, device type, browser, and visit duration to analyze and improve our website’s effectiveness. This aggregated data does not identify personal individuals but helps us optimize user experience and performance.</p>
+
+      <h3>14. Payment Information</h3>
+      <p>Transactional data is processed securely using reputable payment processors. We do not store sensitive card information ourselves; payments are conducted through encrypted and compliant gateways ensuring your financial details are safeguarded.</p>
+
+      <h3>15. Consent to Data Processing</h3>
+      <p>By interacting with Terra Bloom Gardening’s website and services, you consent to our privacy practices as outlined. You have the right to withdraw consent where legally permissible by contacting us or managing your preferences directly.</p>
+
+      <h3>16. Policy Updates</h3>
+      <p>This Privacy Policy may be revised periodically to reflect changes in the law, technology, or our business practices. Updates will be posted on our website with the publication date. We recommend reviewing this policy regularly to remain informed.</p>
+
+      <h3>17. Data Protection Officer</h3>
+      <p>We have appointed a Data Protection Officer who oversees compliance with data protection laws and handles privacy inquiries. Contact information is available upon request and visible on relevant pages.</p>
+
+      <h3>18. User Responsibilities</h3>
+      <p>Users are responsible for maintaining the confidentiality of their account information and should immediately report any suspicious or unauthorized activity to Terra Bloom Gardening for investigation and resolution.</p>
+
+      <h3>19. Opt-in Consent</h3>
+      <p>We require explicit opt-in consent for certain communications including marketing or promotional messages. You may freely grant or withdraw consent as you choose without affecting service accessibility.</p>
+
+      <h3>20. Accessing and Updating Your Information</h3>
+      <p>Requests to access, correct, or delete personal data can be made by contacting our support team. We ensure compliance with legal obligations to maintain accurate and current information respecting your privacy.</p>
+
+      <h3>21. Complaint Rights</h3>
+      <p>If you believe your information has been mishandled or your privacy rights violated, you may lodge complaints with supervisory authorities in your country responsible for data protection enforcement.</p>
+
+      <h3>22. Use of Analytics</h3>
+      <p>We utilize analytics tools to collect usage data, monitor website performance, and optimize visitor experience. Personal data is not directly disclosed through these tools, ensuring anonymous and privacy-friendly analysis.</p>
+
+      <h3>23. Social Media Integration</h3>
+      <p>Engagements on our official social media platforms are governed by those platforms' respective privacy policies. We encourage responsible use and awareness of third-party privacy practices.</p>
+
+      <h3>24. Email Communication Security</h3>
+      <p>Email messages exchanged with Terra Bloom Gardening use encryption and secured protocols to prevent unauthorized interception, ensuring secure communication channels between us and our users.</p>
+
+      <h3>25. Data Breach Notification</h3>
+      <p>In the unlikely event of a security breach impacting personal data, we commit to promptly informing affected users and regulatory bodies, taking corrective actions to mitigate harm and prevent recurrence.</p>
+
+      <h3>26. Marketing Communications</h3>
+      <p>With your consent, we may send offers, news, and updates tailored to your interests. You can opt out of these communications anytime without affecting your use of our services.</p>
+
+      <h3>27. Data Minimization</h3>
+      <p>We limit data collection to only what is necessary to provide and improve our services, minimizing risk and respecting your privacy throughout the data life cycle.</p>
+
+      <h3>28. Use of Cookies</h3>
+      <p>Cookies support site functionality and user preferences. You can manage cookie settings through your browser, including disabling them if desired, with the understanding some features may be limited.</p>
+
+      <h3>29. Children’s Services</h3>
+      <p>We do not provide services aimed at children under 13 and take proactive measures to restrict their data collection in compliance with legal standards.</p>
+
+      <h3>30. Lawful Basis for Processing</h3>
+      <p>Our data processing is based on legal grounds including your consent, contract fulfillment, and legitimate interest, always conducted within regulatory frameworks.</p>
+
+      <h3>31. Retention Periods</h3>
+      <p>Personal data is retained only for the time needed to meet purposes like service delivery and legal obligations, after which we securely dispose of or anonymize the information.</p>
+
+      <h3>32. Anonymous Data</h3>
+      <p>Anonymous or aggregated data may be used internally to understand trends and improve our offerings, with no identifiers linking back to individuals.</p>
+
+      <h3>33. Data Transfer Security</h3>
+      <p>When transferring data internationally, we employ encryption, contractual safeguards, and careful vendor selection to ensure privacy protection continuity.</p>
+
+      <h3>34. User Account Responsibilities</h3>
+      <p>You are responsible for maintaining your account credentials' confidentiality and for all activities under your account unless you report compromises as soon as possible.</p>
+
+      <h3>35. Contacting Us</h3>
+      <p>Our Privacy Officer can be reached at the address and phone number below for questions or requests regarding your personal data or this policy.</p>
+
+      <h3>36. Electronic Communications</h3>
+      <p>We send communications electronically which you agree to by using our services. These messages include important information about your account and service updates.</p>
+
+      <h3>37. Use of Personal Data For Service Improvement</h3>
+      <p>Data analysis helps us personalize service offerings and improve user experience by understanding trends, preferences, and customer feedback while ensuring data security.</p>
+
+      <h3>38. Third-Party Service Providers</h3>
+      <p>We work with trusted partners for hosting, payments, and communications, requiring their adherence to strict data protection and confidentiality standards.</p>
+
+      <h3>39. Modifications to Our Privacy Policy</h3>
+      <p>This policy may change periodically. We notify our users of important updates on our website and encourage regular review to stay informed about privacy practices.</p>
+
+      <h3>40. Effective Date</h3>
+      <p>This Privacy Policy takes effect immediately on publication and replaces all previous versions, ensuring our commitment to data privacy remains transparent and up to date.</p>
+
+      <h3>41. Data Subject Rights</h3>
+      <p>You have rights under applicable data laws including the right to access, rectify, erase, restrict, object to processing, and data portability, supporting your control over personal information.</p>
+
+      <h3>42. Automated Decision Making</h3>
+      <p>We do not apply automated decision making or profiling on personal data that produces legal or similarly significant effects on you without explicit consent and safeguards.</p>
+
+      <h3>43. Security Incident Response</h3>
+      <p>We maintain protocols to detect, investigate, and respond to security incidents, protecting your personal data and minimizing risk exposure promptly and effectively.</p>
+
+      <h3>44. Privacy Policy Scope</h3>
+      <p>This policy covers all data collected through our website and offline interactions related to Terra Bloom Gardening services, providing consistent protection everywhere.</p>
+
+      <h3>45. Legal Compliance</h3>
+      <p>We comply with laws such as GDPR, CCPA, and other applicable privacy regulations, ensuring all personal data processing meets stringent legal standards.</p>
+
+      <h3>46. International Users</h3>
+      <p>If you reside outside our home country, the provisions here comply with international data transfer and processing rules to maintain your privacy rights globally.</p>
+
+      <h3>47. Data Breach Procedures</h3>
+      <p>Our breach response plan includes timely notification, investigation, and remedial actions to uphold data protection and user trust.</p>
+
+      <h3>48. Privacy Training</h3>
+      <p>Our staff receive regular training on data protection principles and practices to maintain high standards of privacy compliance and ethical handling.</p>
+
+      <h3>49. Privacy Impact Assessments</h3>
+      <p>We conduct assessments for new or risky data processing activities to evaluate and mitigate privacy risks effectively.</p>
+
+      <h3>50. Contact Information Management</h3>
+      <p>We keep your contact information accurate and current, encouraging you to update details to maintain effective communication.</p>
+
+      <h3>51. Data Aggregation</h3>
+      <p>Aggregated data is used anonymously for improving business insights and service innovation while ensuring no individual identification.</p>
+
+      <h3>52. Data Encryption</h3>
+      <p>All sensitive personal data stored and transmitted are encrypted to prevent unauthorized access and protect confidentiality.</p>
+
+      <h3>53. Privacy by Design</h3>
+      <p>We integrate privacy considerations into the development of products and services, ensuring protection is built in from the outset.</p>
+
+      <h3>54. Data Accuracy</h3>
+      <p>We strive to maintain accurate and complete personal data to provide quality services and minimize errors or misunderstandings.</p>
+
+      <h3>55. Third-Party Marketing Services</h3>
+      <p>Marketing communications may involve partnering with third parties who adhere to strict privacy requirements, with your consent.</p>
+
+      <h3>56. User Authentication and Access Control</h3>
+      <p>We implement authentication mechanisms to restrict access to personal data only to authorized personnel and system features.</p>
+
+      <h3>57. Privacy Policy Accessibility</h3>
+      <p>This Privacy Policy is readily accessible on our website with clear language, ensuring you understand how your data is handled.</p>
+
+      <h3>58. Cross-Border Data Protection</h3>
+      <p>We take special care when transferring data across borders, ensuring legal safeguards and proper data handling internationally.</p>
+
+      <h3>59. Archiving and Backup</h3>
+      <p>Your data is backed up securely to prevent loss and maintain continuity of services while respecting retention policies.</p>
+
+      <h3>60. User Data Ownership</h3>
+      <p>Users retain ownership of their personal data; Terra Bloom Gardening acts as a responsible custodian to manage it with care and respect.</p>
+    </section>
+  </main>
+
+  <footer role="contentinfo" aria-label="Footer with company information, address, phone number, and disclaimer">
+    <div class="container">
+      <address class="address" aria-label="Physical address">
+        <span class="material-icons" aria-hidden="true" style="vertical-align:middle;">location_on</span>
+        13 Washington Square S, New York, NY 10012, USA
+      </address>
+      <div class="phone" aria-label="Contact phone number">
+        <span class="material-icons" aria-hidden="true" style="vertical-align:middle;">phone</span>
+        +1 (555) 123-4567
+      </div>
+      <div class="disclaimer" aria-live="polite" aria-atomic="true" tabindex="0">
+        <strong>Disclaimer:</strong> The information provided on this website is for general informational purposes only. Terra Bloom Gardening is not responsible for any outcomes resulting from the use of the information herein. Please consult a gardening or forestry professional for personalized advice and services.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('show');
+    });
+
+    window.addEventListener('resize', () => {
+      if(window.innerWidth > 767) {
+        mobileMenu.classList.remove('show');
+        menuButton.setAttribute('aria-expanded', false);
+      }
+    });
+  </script>
+</body>
+</html>
+
