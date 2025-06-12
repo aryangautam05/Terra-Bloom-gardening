@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | Terra Bloom Gardening</title>
+  <meta name="description" content="Contact Terra Bloom Gardening for expert gardening, landscaping, and forestry services. Reach out via form, phone, or visit us in New York." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <style>
+    :root {
+      --color-forest-dark: #1b3a24;
+      --color-forest-medium: #2e5f3a;
+      --color-forest-light: #71a478;
+      --color-earth: #e9f1de;
+      --color-text-primary: #2f4f4f;
+      --color-text-secondary: #6b7280;
+      --color-bg: #f4f9f4;
+      --color-accent: #3a9d23;
+      --color-white: #fff;
+      --shadow-light: 0 4px 12px rgba(0,0,0,0.07);
+      --border-radius: 12px;
+      --spacing-unit: 16px;
+      --font-family-primary: 'Inter', sans-serif;
+      --font-family-secondary: 'Poppins', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font-family-primary);
+      background: var(--color-bg);
+      color: var(--color-text-primary);
+      line-height: 1.6;
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+    a {
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover, a:focus {
+      color: var(--color-forest-medium);
+      outline: none;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 64px;
+    }
+    header {
+      background: var(--color-forest-dark);
+      color: var(--color-white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    nav.header-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 90%;
+    }
+    .logo {
+      font-family: var(--font-family-secondary);
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--color-earth);
+      letter-spacing: 1.2px;
+      user-select: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: var(--color-earth);
+      padding: 8px 16px;
+      border-radius: var(--border-radius);
+      font-weight: 600;
+      font-size: 1rem;
+      background: transparent;
+      transition: background-color 0.3s ease;
+    }
+    .nav-links a:hover, .nav-links a:focus {
+      background: var(--color-forest-medium);
+      outline: none;
+    }
+    .mobile-menu-button {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--color-earth);
+      font-size: 2rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    .mobile-menu-button:hover, .mobile-menu-button:focus {
+      color: var(--color-accent);
+      outline: none;
+    }
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background: var(--color-forest-dark);
+      padding: 1rem;
+    }
+    .mobile-nav a {
+      color: var(--color-earth);
+      padding: 12px 0;
+      border-bottom: 1px solid var(--color-forest-medium);
+      font-weight: 600;
+      display: block;
+    }
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, #2e5f3a, #71a478 80%);
+      color: var(--color-earth);
+      padding: 120px 0 60px;
+      overflow: hidden;
+      text-align: center;
+      user-select: none;
+    }
+    .hero h1 {
+      font-family: var(--font-family-secondary);
+      font-size: 3.5rem;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 8px rgba(26,44,14,0.7);
+    }
+    .contact-form {
+      background: var(--color-white);
+      padding: 32px 40px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-light);
+      max-width: 800px;
+      margin: 0 auto 48px;
+    }
+    .contact-form h2 {
+      font-size: 2.25rem;
+      color: var(--color-forest-dark);
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 24px;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--color-forest-dark);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--color-forest-medium);
+      border-radius: var(--border-radius);
+      font-size: 1rem;
+      font-family: var(--font-family-primary);
+      transition: border-color 0.3s ease;
+    }
+    input:focus, textarea:focus {
+      border-color: var(--color-accent);
+      outline: none;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    button.submit-btn {
+      display: block;
+      width: 100%;
+      font-family: var(--font-family-secondary);
+      font-weight: 700;
+      font-size: 1.25rem;
+      padding: 1rem;
+      border: none;
+      border-radius: var(--border-radius);
+      background-image: linear-gradient(135deg, #71a478, #2e5f3a);
+      color: var(--color-earth);
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(26,44,14,0.5);
+      transition: background-image 0.4s ease;
+    }
+    button.submit-btn:hover, button.submit-btn:focus {
+      background-image: linear-gradient(135deg, #2e5f3a, #71a478);
+      outline: none;
+      transform: translateY(-3px);
+    }
+    .content-section {
+      background: var(--color-white);
+      border-radius: var(--border-radius);
+      padding: 48px 32px;
+      box-shadow: var(--shadow-light);
+      margin-bottom: 64px;
+    }
+    .content-section h2 {
+      font-size: 2.25rem;
+      color: var(--color-forest-dark);
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .content-section h3 {
+      font-size: 1.5rem;
+      color: var(--color-forest-medium);
+      margin: 32px 0 16px;
+    }
+    .content-section p {
+      color: var(--color-text-primary);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 12px;
+      text-align: justify;
+    }
+    footer {
+      background: var(--color-forest-dark);
+      color: var(--color-earth);
+      padding: 48px 16px 48px;
+      font-size: 0.9rem;
+    }
+    footer .container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    footer .address {
+      font-weight: 600;
+      color: var(--color-earth);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    footer .phone {
+      font-weight: 600;
+      color: var(--color-earth);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    footer .disclaimer {
+      opacity: 0.8;
+      line-height: 1.4;
+      max-width: 720px;
+    }
+    @media (max-width: 767px) {
+      .nav-links {
+        display: none;
+      }
+      .mobile-menu-button {
+        display: block;
+      }
+      .mobile-nav.show {
+        display: flex;
+      }
+      header nav.header-nav {
+        width: 90%;
+        padding: 0.5rem 0.5rem;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .contact-form, .content-section {
+        padding: 32px 16px;
+        margin-bottom: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header role="banner" aria-label="Primary Navigation">
+    <nav class="header-nav container" role="navigation" aria-label="Main navigation">
+      <div class="logo" tabindex="0">Terra Bloom Gardening</div>
+      <div class="nav-links">
+        <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0"aria-current="page">Contact us</a>
+      </div>
+      <button class="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" id="mobile-menu-button">
+        <span class="material-icons" aria-hidden="true">menu</span>
+      </button>
+    </nav>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile Main navigation">
+      <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0"aria-current="page">Contact us</a>
+    </nav>
+  </header>
+
+  <section class="hero" role="region" aria-label="Contact header">
+    <h1>Contact Terra Bloom Gardening</h1>
+    <p>Get in touch with us today. Use the form below or find our contact details at the bottom.</p>
+  </section>
+
+  <main class="container" role="main">
+    <section class="contact-form" aria-label="Contact form">
+      <h2>Send Us a Message</h2>
+      <form id="contactForm" aria-describedby="formInstructions" novalidate>
+        <p id="formInstructions">All fields are required. We will get back to you as soon as possible.</p>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required aria-required="true" aria-label="Your full name"/>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" required aria-required="true" aria-label="Your email address"/>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" aria-label="Your phone number"/>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" required aria-required="true" aria-label="Subject of your message"/>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required aria-required="true" aria-label="Your message" rows="5"></textarea>
+        </div>
+        <button type="submit" class="submit-btn" aria-label="Submit contact form">Submit</button>
+        <p role="alert" aria-live="assertive" id="formStatus" style="color:var(--color-accent);margin-top:1rem;"></p>
+      </form>
+    </section>
+
+    <section class="content-section" aria-label="Detailed contact information and explanations">
+      <h2>Contact Information & Detailed Explanations</h2>
+
+      <h3>1. How to Reach Us</h3>
+      <p>You can contact Terra Bloom Gardening through multiple convenient channels. Our primary contact methods include a secure online form, telephone calls during business hours, or through listed email addresses. We encourage you to reach out with any inquiries, requests, or service needs, ensuring prompt and personal support tailored to your gardening or forestry questions.</p>
+
+      <h3>2. Business Hours</h3>
+      <p>Our office operates Monday through Friday from 9 AM to 6 PM and Saturdays from 10 AM to 4 PM. We are closed on Sundays and public holidays. Contact during these hours guarantees timely responses, although messages left outside of business hours will be addressed on the next working day. We appreciate your understanding.</p>
+
+      <h3>3. Location Accessibility</h3>
+      <p>Terra Bloom Gardening is conveniently located at 13 Washington Square S, New York, NY 10012, USA. Our office is accessible by public transport with nearby subway stations, and ample parking is available for those arriving by car. Customers are welcome to visit upon appointment for consultations and service discussions.</p>
+
+      <h3>4. Service Area</h3>
+      <p>We proudly serve New York City and surrounding areas, including select parts of New Jersey, Connecticut, and nearby regions. If you reside outside our primary service range, please contact us to verify whether we can accommodate your location or suggest referrals.</p>
+
+      <h3>5. Response Time</h3>
+      <p>Our commitment is to respond to all inquiries within 48 business hours. Complex requests may require additional time for detailed responses or quotations. We aim to provide clear communication and ensure your questions or concerns are fully addressed in each interaction.</p>
+
+      <h3>6. Emergency Contacts</h3>
+      <p>For urgent gardening or forestry matters requiring immediate attention, please indicate urgency through the contact form or call our emergency support line available for existing clients only. We prioritize emergency services to minimize damage or risk to your property.</p>
+
+      <h3>7. Scheduling Consultations</h3>
+      <p>Consultations can be scheduled through our contact form or by phone. These sessions may be conducted in person, by phone, or through video conferencing depending on your preference and needs. We seek to offer flexibility and professional advice tailored to your outdoor space.</p>
+
+      <h3>8. Service Quotes</h3>
+      <p>After understanding your requirements through consultation, Terra Bloom Gardening prepares detailed service quotes. Quotes include all expected costs, timelines, and materials, offering transparency so you can make informed decisions regarding your garden or forestry projects.</p>
+
+      <h3>9. Privacy in Communication</h3>
+      <p>All communications with Terra Bloom Gardening are confidential. We do not share your details with unauthorized third parties and handle all discussions and data with utmost discretion aligned with our privacy policy.</p>
+
+      <h3>10. Reporting Issues</h3>
+      <p>If you experience any problems with our services or website, please notify us immediately by any contact channel. Terra Bloom Gardening values your feedback to improve service quality and addresses concerns promptly and professionally.</p>
+
+      <h3>11. Service Modifications</h3>
+      <p>Requests to modify scheduled services can often be accommodated. Please contact us as early as possible to discuss changes or special requirements, ensuring flexibility and satisfaction in our client relationships.</p>
+
+      <h3>12. Customer Feedback</h3>
+      <p>We welcome feedback through our contact channels to understand and enhance our offerings. Your opinions help Terra Bloom Gardening tailor services to better meet client expectations and foster ongoing improvement in gardening and forestry care.</p>
+
+      <h3>13. Partnership Opportunities</h3>
+      <p>If you are interested in partner programs, collaborations, or vendor relationships, please reach out to our business development personnel through the contact pathways. We explore synergistic opportunities to grow our collective impact.</p>
+
+      <h3>14. Media Inquiries</h3>
+      <p>Media representatives seeking interviews, resources, or information about Terra Bloom Gardening can get in touch via email or phone. Our communications team handles public relations professionally and will facilitate requests promptly.</p>
+
+      <h3>15. Career Opportunities</h3>
+      <p>Potential employees and contractors can inquire about current job openings or submit applications through our contact channels. We prioritize recruitment of talented individuals passionate about sustainable landscaping and environmental stewardship.</p>
+
+      <h3>16. Frequently Asked Questions (FAQ)</h3>
+      <p>Many common questions and topics are covered in our FAQ section on the main website. We encourage reviewing the FAQ for quick answers before contacting us for convenience and instant help.</p>
+
+      <h3>17. Technical Support</h3>
+      <p>Should you require assistance with online tools, booking systems, or website navigation, contact our technical support team. We provide clear guidance to ensure a seamless experience.</p>
+
+      <h3>18. Payment Assistance</h3>
+      <p>For payment-related inquiries, billing issues, or invoice clarifications, contact our finance department via the listed phone number or email. We are committed to transparent and helpful financial communications.</p>
+
+      <h3>19. Event Participation</h3>
+      <p>Information concerning participation in community or promotional events organized by Terra Bloom Gardening is available through our contact points. We encourage engagement and welcome your presence during such events.</p>
+
+      <h3>20. Sustainability Initiatives</h3>
+      <p>Questions about Terra Bloom Gardening's environmental policies and sustainability practices can be directed to our outreach team. Learn how we integrate eco-friendly principles in all services to protect our planet.</p>
+
+      <h3>21. Complaints Handling</h3>
+      <p>Customer complaints are taken seriously and managed with care. Use the contact form or phone to report any dissatisfaction, and our team will work diligently toward resolution promptly and fairly.</p>
+
+      <h3>22. Cancellation Policy</h3>
+      <p>Cancellation requests should be submitted timely. Fees may apply for late cancellations or no-shows as detailed in service agreements. Contact us to understand policy details and avoid inconvenience.</p>
+
+      <h3>23. Refund Policy</h3>
+      <p>Refund requests are managed in accordance with agreed service contracts and consumer protection laws. We strive to resolve financial issues amicably while maintaining trust and fairness.</p>
+
+      <h3>24. Safety Guidelines</h3>
+      <p>Client safety and site safety are priorities. Inquiries about safety protocols during service delivery are welcomed, and Terra Bloom Gardening ensures compliance with relevant standards and best practices.</p>
+
+      <h3>25. Insurance and Liability</h3>
+      <p>Details about our insurance coverage and liability limitations are available upon request. Contact us to obtain documented proof or discuss concerns related to risk management.</p>
+
+      <h3>26. Data Protection Officer Contact</h3>
+      <p>Questions or issues concerning data privacy should be directed to our Data Protection Officer via the contact details provided below, ensuring your rights are respected and protected.</p>
+
+      <h3>27. Use of Testimonials</h3>
+      <p>If you submit feedback or testimonials, you grant us permission to use such materials in promotional efforts. Let us know any restrictions or preferences regarding your content.</p>
+
+      <h3>28. Website Terms of Use</h3>
+      <p>Use of Terra Bloom Gardening's website is governed by these terms, including content usage, disclaimers, and user conduct rules. Contact us if you have questions about website policies.</p>
+
+      <h3>29. Intellectual Property Rights</h3>
+      <p>All intellectual property on our site and materials remain owned by Terra Bloom Gardening. Unauthorized reproduction or misuse is prohibited. Contact for permission requests or licensing inquiries.</p>
+
+      <h3>30. Warranty Disclaimer</h3>
+      <p>We provide services without warranties beyond those expressly stated. Details about warranty coverage are provided in individual service contracts or agreements.</p>
+
+      <h3>31. Limitation on Liability</h3>
+      <p>Terra Bloom Gardening limits liability for damages arising from service use or website information to the fullest extent permitted by law, protecting both client and company interests.</p>
+
+      <h3>32. Force Majeure Clause</h3>
+      <p>Terra Bloom Gardening is not liable for failure or delay caused by unforeseen events outside reasonable control such as natural disasters, strikes, or other disruptions.</p>
+
+      <h3>33. Governing Law and Jurisdiction</h3>
+      <p>These Terms are governed by the laws applicable to Terra Bloom Gardening's location. Any disputes will be subject to the jurisdiction where the company is registered.</p>
+
+      <h3>34. Amendments to Terms</h3>
+      <p>We reserve the right to update these Terms at any time. Changes are effective upon posting on our website. Continued use constitutes acceptance of updated terms.</p>
+
+      <h3>35. Severability</h3>
+      <p>If any provision is invalid or unenforceable, the remainder remains effective. Invalid provision will be interpreted in a way that most closely reflects the original intent.</p>
+
+      <h3>36. Headings</h3>
+      <p>Section headings are for convenience and do not affect interpretation of the terms.</p>
+
+      <h3>37. Entire Agreement</h3>
+      <p>These Terms and Conditions, together with our Privacy Policy, constitute the full agreement between you and Terra Bloom Gardening.</p>
+
+      <h3>38. Contacting Terra Bloom Gardening</h3>
+      <p>You can reach us with questions or concerns by using the contact form, phone number, or physical address provided on this page and our website.</p>
+
+      <h3>39. User Conduct</h3>
+      <p>Users agree to comply with all applicable laws, avoid abusive or illegal activities, and respect our services and website's integrity in all interactions.</p>
+
+      <h3>40. Service Availability</h3>
+      <p>Terra Bloom Gardening aims to provide continuous service access but does not guarantee uninterrupted operation. We reserve the right to suspend services for maintenance or unforeseen issues.</p>
+      
+    </section>
+  </main>
+
+  <footer role="contentinfo" aria-label="Footer with company information, address, phone number, and disclaimer">
+    <div class="container">
+      <address class="address" aria-label="Physical address">
+        <span class="material-icons" aria-hidden="true" style="vertical-align:middle;">location_on</span>
+        13 Washington Square S, New York, NY 10012, USA
+      </address>
+      <div class="phone" aria-label="Contact phone number">
+        <span class="material-icons" aria-hidden="true" style="vertical-align:middle;">phone</span>
+        +1 (555) 123-4567
+      </div>
+      <div class="disclaimer" aria-live="polite" aria-atomic="true" tabindex="0">
+        <strong>Disclaimer:</strong> The information provided on this website is for general informational purposes only. Terra Bloom Gardening is not responsible for any outcomes resulting from the use of the information herein. Please consult a gardening or forestry professional for personalized advice and services.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('show');
+    });
+    window.addEventListener('resize', () => {
+      if(window.innerWidth > 767) {
+        mobileMenu.classList.remove('show');
+        menuButton.setAttribute('aria-expanded', false);
+      }
+    });
+
+    // Simple form validation and alert
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
+    form?.addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Simple validation example
+      if(!form.name.value.trim() || !form.email.value.trim() || !form.subject.value.trim() || !form.message.value.trim()){
+        status.textContent = 'Please fill in all required fields.';
+        status.style.color = 'red';
+        return;
+      }
+      status.textContent = 'Thank you for getting in touch! We will respond soon.';
+      status.style.color = 'green';
+      form.reset();
+    });
+  </script>
+</body>
+</html>
