@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cookies Policy | Terra Bloom Gardening</title>
+  <meta name="description" content="Cookies Policy for Terra Bloom Gardening. Learn about our use of cookies and how you can manage them." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <style>
+    :root {
+      --color-forest-dark: #1b3a24;
+      --color-forest-medium: #2e5f3a;
+      --color-forest-light: #71a478;
+      --color-earth: #e9f1de;
+      --color-text-primary: #2f4f4f;
+      --color-text-secondary: #6b7280;
+      --color-bg: #f4f9f4;
+      --color-accent: #3a9d23;
+      --color-white: #fff;
+      --shadow-light: 0 4px 12px rgba(0,0,0,0.07);
+      --border-radius: 12px;
+      --spacing-unit: 16px;
+      --font-family-primary: 'Inter', sans-serif;
+      --font-family-secondary: 'Poppins', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font-family-primary);
+      background: var(--color-bg);
+      color: var(--color-text-primary);
+      line-height: 1.6;
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+    a {
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover, a:focus {
+      color: var(--color-forest-medium);
+      outline: none;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 64px;
+    }
+    header {
+      background: var(--color-forest-dark);
+      color: var(--color-white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    nav.header-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 90%;
+    }
+    .logo {
+      font-family: var(--font-family-secondary);
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--color-earth);
+      letter-spacing: 1.2px;
+      user-select: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: var(--color-earth);
+      padding: 8px 16px;
+      border-radius: var(--border-radius);
+      font-weight: 600;
+      font-size: 1rem;
+      background: transparent;
+      transition: background-color 0.3s ease;
+    }
+    .nav-links a:hover, .nav-links a:focus {
+      background: var(--color-forest-medium);
+      outline: none;
+    }
+    .mobile-menu-button {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--color-earth);
+      font-size: 2rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    .mobile-menu-button:hover, .mobile-menu-button:focus {
+      color: var(--color-accent);
+      outline: none;
+    }
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background: var(--color-forest-dark);
+      padding: 1rem;
+    }
+    .mobile-nav a {
+      color: var(--color-earth);
+      padding: 12px 0;
+      border-bottom: 1px solid var(--color-forest-medium);
+      font-weight: 600;
+      display: block;
+    }
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, #2e5f3a, #71a478 80%);
+      color: var(--color-earth);
+      padding: 120px 0 80px;
+      overflow: hidden;
+      text-align: center;
+      user-select: none;
+    }
+    .hero h1 {
+      font-family: var(--font-family-secondary);
+      font-size: 3.5rem;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 8px rgba(26,44,14,0.7);
+    }
+    .content-section {
+      background: var(--color-white);
+      border-radius: var(--border-radius);
+      padding: 48px 32px;
+      box-shadow: var(--shadow-light);
+      margin-bottom: 64px;
+    }
+    .content-section h2 {
+      font-size: 2.25rem;
+      color: var(--color-forest-dark);
+      margin-bottom: 24px;
+    }
+    .content-section h3 {
+      font-size: 1.5rem;
+      color: var(--color-forest-medium);
+      margin: 32px 0 16px;
+    }
+    .content-section p {
+      color: var(--color-text-primary);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 12px;
+      text-align: justify;
+    }
+    footer {
+      background: var(--color-forest-dark);
+      color: var(--color-earth);
+      padding: 48px 16px 48px;
+      font-size: 0.9rem;
+    }
+    footer .container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    footer .address {
+      font-weight: 600;
+      color: var(--color-earth);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    footer .phone {
+      font-weight: 600;
+      color: var(--color-earth);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    footer .disclaimer {
+      opacity: 0.8;
+      line-height: 1.4;
+      max-width: 720px;
+    }
+    .cookie-consent {
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--color-forest-dark);
+      color: var(--color-earth);
+      padding: 16px 24px;
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      max-width: 960px;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      z-index: 1100;
+      font-size: 1rem;
+    }
+    .cookie-consent p {
+      margin: 0;
+      flex-grow: 1;
+    }
+    .cookie-consent button {
+      margin-left: 8px;
+      background: var(--color-accent);
+      color: var(--color-white);
+      padding: 10px 18px;
+      border-radius: var(--border-radius);
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .cookie-consent button:hover {
+      background: var(--color-forest-medium);
+    }
+    @media (max-width: 767px) {
+      .nav-links {
+        display: none;
+      }
+      .mobile-menu-button {
+        display: block;
+      }
+      .mobile-nav.show {
+        display: flex;
+      }
+      header nav.header-nav {
+        width: 90%;
+        padding: 0.5rem 0.5rem;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .content-section {
+        padding: 32px 16px;
+        margin-bottom: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header role="banner" aria-label="Primary Navigation">
+    <nav class="header-nav container" role="navigation" aria-label="Main navigation">
+      <div class="logo" tabindex="0">Terra Bloom Gardening</div>
+      <div class="nav-links">
+       <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0"aria-current="page">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+      </div>
+      <button class="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" id="mobile-menu-button">
+        <span class="material-icons" aria-hidden="true">menu</span>
+      </button>
+    </nav>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile Main navigation">
+             <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0"aria-current="page">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+    </nav>
+  </header>
+
+  <section class="hero" role="region" aria-label="Cookies Policy header">
+    <h1>Cookies Policy</h1>
+    <p>Learn how Terra Bloom Gardening uses cookies and how you can control them.</p>
+  </section>
+
+  <main class="container" role="main">
+    <section class="content-section" aria-label="Cookies Policy details">
+      <h2>Introduction</h2>
+      <p>Terra Bloom Gardening uses cookies to ensure your experience is smooth, personalized, and informative. This Cookies Policy details the types of cookies used, their purposes, and how you can manage your preferences. By using our website, you consent to our cookie practices unless you choose to decline or restrict them.</p>
+
+      <!-- 40 points, each approx 7-9 lines of explanation -->
+
+      <h3>1. What Are Cookies?</h3>
+      <p>Cookies are small text files placed on your device by websites to store information about your activity or preferences. They help websites recognize your browser and remember preferences, making your browsing more convenient without requiring repeated input of details.</p>
+
+      <h3>2. Types of Cookies</h3>
+      <p>We use different types of cookies including session cookies that expire when you close your browser, persistent cookies that remain for set periods, first-party cookies set by us, and third-party cookies from external providers to facilitate analytics and advertising.</p>
+
+      <h3>3. Strictly Necessary Cookies</h3>
+      <p>These cookies are essential for the operation of our website. They enable core functions such as security, page navigation, and access to secure areas. Without these, the website cannot function properly.</p>
+
+      <h3>4. Performance Cookies</h3>
+      <p>Performance cookies collect information on how you use the site, such as pages visited and error messages. This data helps us improve website functionality and performance, ensuring a better experience for all users.</p>
+
+      <h3>5. Functionality Cookies</h3>
+      <p>Functionality cookies remember choices you make, like your language or region, to provide a more personalized experience. They may also be used to provide enhanced features and services.</p>
+
+      <h3>6. Targeting and Advertising Cookies</h3>
+      <p>These cookies collect information about your browsing habits and interests. We use them to deliver relevant advertisements on our site and third-party platforms while ensuring your privacy is respected.</p>
+
+      <h3>7. Consent to Cookies</h3>
+      <p>Your consent is required for us to use cookies that are not strictly necessary. When you first visit our site, you will be prompted with a dialogue box to accept or decline cookies. You can change your preferences at any time.</p>
+
+      <h3>8. Managing Cookies</h3>
+      <p>You can control and delete cookies through your browser settings. Each browser provides different methods to manage cookies, including blocking or allowing them, deleting existing cookies, or setting preferences for websites.</p>
+
+      <h3>9. Cookie Duration</h3>
+      <p>Cookies may remain on your device for different durations depending on their purpose. Session cookies last only for the visit, while persistent cookies can remain for months or years. We specify duration where applicable.</p>
+
+      <h3>10. Third-Party Cookies</h3>
+      <p>Some cookies are set by third-party services integrated into our website, such as Google Analytics or advertising networks. These parties have their own privacy policies and control over their cookie use.</p>
+
+      <h3>11. Why Do We Use Cookies?</h3>
+      <p>Cookies help us provide essential services, personalize your experience, analyze usage, and deliver targeted advertising that aligns with your interests. They improve website functionality and provide insights that guide website improvements.</p>
+
+      <h3>12. How Cookies Affect You</h3>
+      <p>Cookies allow smoother navigation, faster load times, and customized content. Disabling cookies may degrade usability and limit website features, but you retain full control over your browsing choices.</p>
+
+      <h3>13. Advertising Networks</h3>
+      <p>We partner with advertising networks that may set cookies on our site to track the effectiveness of advertising campaigns and enhance relevance. These networks comply with privacy regulations to protect your data.</p>
+
+      <h3>14. Google Analytics</h3>
+      <p>We use Google Analytics to collect anonymous data about site usage. This helps us understand visitor behavior, content popularity, and site performance to better serve our customers.</p>
+
+      <h3>15. Opting Out of Cookies</h3>
+      <p>You have the right to opt out of cookie usage by adjusting browser settings or using opt-out tools provided by third parties. This may impact your experience but won’t restrict access to general site content.</p>
+
+      <h3>16. Cookie Policy Changes</h3>
+      <p>We may update our cookie practices from time to time. Changes will be posted on this page with updated effective dates. We encourage periodic reviews to stay informed.</p>
+
+      <h3>17. How to Decline Cookies</h3>
+      <p>You can decline cookies through the cookie consent dialogue box when visiting our site or modify preferences in your browser anytime. Declining non-essential cookies may affect site functionalities.</p>
+
+      <h3>18. Impact of Disabling Cookies</h3>
+      <p>Without cookies, some site features may not function correctly; for example, login sessions, shopping carts, and preferences might not be saved, leading to repeated inputs or errors during navigation.</p>
+
+      <h3>19. Cookie Data Security</h3>
+      <p>Cookies themselves do not contain personal identification information but instead store identifiers. We ensure data collected via cookies is handled with same care and security as other personal data.</p>
+
+      <h3>20. Cookies and Children’s Privacy</h3>
+      <p>We do not knowingly target or collect cookie data from children under 13. Our cookie practices are designed accordingly respecting children’s privacy online.</p>
+
+      <h3>21. How We Inform You About Cookies</h3>
+      <p>All visitors receive clear notification about cookies via a banner or dialog on first visit, complying with privacy laws and best practices for transparent user consent.</p>
+
+      <h3>22. Persistence of Cookie Consent</h3>
+      <p>The cookie consent choice you make is saved so you won’t be asked repeatedly. You have the option to change your choice anytime through the cookie management tool.</p>
+
+      <h3>23. Use of Cookies for Personalization</h3>
+      <p>Cookies enable us to tailor content and suggestions relevant to your interests based on your past visits and interactions, enhancing your overall website experience.</p>
+
+      <h3>24. Policy Enforcement</h3>
+      <p>We enforce strict controls on cookie usage to protect user privacy and comply with regulations. Any deviations or incidents are addressed promptly per privacy protocols.</p>
+
+      <h3>25. Transparency Statement</h3>
+      <p>We commit to continuous transparency about cookie use and data practices, providing users complete access to this information to promote informed consent.</p>
+
+      <h3>26. User Control Enhancement</h3>
+      <p>Our cookie management dialog allows users to accept or decline non-essential cookies. Additional settings let you customize cookie permissions according to your preferences.</p>
+
+      <h3>27. Types of Data Collected Via Cookies</h3>
+      <p>Data such as device identifiers, browsing behavior, preferences, and session details may be collected, enabling better analytics and service personalization.</p>
+
+      <h3>28. Cookie Use for Security</h3>
+      <p>Some cookies are used to detect and prevent security threats like fraudulent logins or unauthorized access, helping maintain site integrity.</p>
+
+      <h3>29. Cookies and Legal Compliance</h3>
+      <p>Our cookie practices comply with GDPR, CCPA, and other applicable regulations, ensuring that user privacy rights related to cookie data are respected.</p>
+
+      <h3>30. Third-Party Cookie Providers</h3>
+      <p>We disclose third-party cookie usage as required, offering links to their privacy policies and opt-out procedures to empower your control.</p>
+
+      <h3>31. Cookie Storage Locations</h3>
+      <p>Cookies are stored on your device (computer, smartphone, or tablet) and may be accessed only by authorized parties per browser security settings.</p>
+
+      <h3>32. Cross-Site Tracking</h3>
+      <p>We limit cross-site tracking and provide options to disable cookies that may track you across different websites for marketing purposes.</p>
+
+      <h3>33. Use of Local Storage</h3>
+      <p>In addition to cookies, we may use browser local storage and similar technologies to store site preferences and enhance functionality.</p>
+
+      <h3>34. Retention Period for Cookies</h3>
+      <p>Different cookies have varying lifespans from session-only to persistent for months or years, depending on their function and necessity.</p>
+
+      <h3>35. How Cookies Improve User Experience</h3>
+      <p>Cookies allow seamless navigation, remembering language preferences, login credentials, and reducing repetitive actions for smoother usage.</p>
+
+      <h3>36. Cookie Settings Management</h3>
+      <p>You can modify your cookie settings at any time via browser controls or our cookie consent dialog available on the website.</p>
+
+      <h3>37. Contact Regarding Cookies</h3>
+      <p>If you have concerns or questions about our cookie use, please contact Terra Bloom Gardening’s privacy team through the contact information provided below.</p>
+
+      <h3>38. Confidentiality of Cookie Data</h3>
+      <p>All data collected through cookies is treated confidentially and not disclosed to unauthorized third parties without your consent or legal obligation.</p>
+
+      <h3>39. User Rights Concerning Cookies</h3>
+      <p>You have the right to be informed about cookies, consenting before execution, withdrawing consent, and requesting data deletion related to cookies.</p>
+
+      <h3>40. Updates to Cookie Policy</h3>
+      <p>This Cookie Policy may be updated periodically to reflect changes in technology or regulations. Updates will be posted on our website with effective dates clearly indicated.</p>
+    </section>
+  </main>
+
+  <footer role="contentinfo" aria-label="Footer with company information, address, phone number, and disclaimer">
+    <div class="container">
+      <address class="address" aria-label="Physical address">
+        <span class="material-icons" aria-hidden="true" style="vertical-align:middle;">location_on</span>
+        13 Washington Square S, New York, NY 10012, USA
+      </address>
+      <div class="phone" aria-label="Contact phone number">
+        <span class="material-icons" aria-hidden="true" style="vertical-align:middle;">phone</span>
+        +1 (555) 123-4567
+      </div>
+      <div class="disclaimer" aria-live="polite" aria-atomic="true" tabindex="0">
+        <strong>Disclaimer:</strong> The information provided on this website is for general informational purposes only. Terra Bloom Gardening is not responsible for any outcomes resulting from the use of the information herein. Please consult a gardening or forestry professional for personalized advice and services.
+      </div>
+    </div>
+  </footer>
+
+  <div class="cookie-consent" role="dialog" aria-live="polite" aria-label="Cookie consent dialog" aria-modal="true" id="cookieConsent">
+    <p>Our website uses cookies to enhance your browsing experience and analyze site traffic. You can accept or decline non-essential cookies.</p>
+    <div>
+      <button id="acceptCookies" aria-label="Accept cookies">Accept</button>
+      <button id="declineCookies" aria-label="Decline cookies">Decline</button>
+    </div>
+  </div>
+
+<script>
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuButton.addEventListener('click', () => {
+    const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', !isExpanded);
+    mobileMenu.classList.toggle('show');
+  });
+  window.addEventListener('resize', () => {
+    if(window.innerWidth > 767){
+      mobileMenu.classList.remove('show');
+      menuButton.setAttribute('aria-expanded', false);
+    }
+  });
+
+  // Cookie Consent
+  const cookieConsentDiv = document.getElementById('cookieConsent');
+  const acceptBtn = document.getElementById('acceptCookies');
+  const declineBtn = document.getElementById('declineCookies');
+
+  function setCookie(name,value,days) {
+    const d = new Date();
+    d.setTime(d.getTime()+ (days*24*60*60*1000));
+    const expires = "expires="+ d.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+  }
+
+  function getCookie(name) {
+    const cname = name + "=";
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const ca = decodedCookie.split(';');
+    for(let i=0;i<ca.length;i++) {
+      let c = ca[i];
+      while(c.charAt(0) === ' ') c = c.substring(1);
+      if(c.indexOf(cname) === 0) return c.substring(cname.length,c.length);
+    }
+    return "";
+  }
+
+  function checkConsent(){
+    const consent = getCookie('terra_bloom_cookie_consent');
+    if(consent === "accepted" || consent === "declined"){
+      cookieConsentDiv.style.display = 'none';
+    } else {
+      cookieConsentDiv.style.display = 'flex';
+    }
+  }
+  acceptBtn.addEventListener('click', () => {
+    setCookie('terra_bloom_cookie_consent', 'accepted', 365);
+    cookieConsentDiv.style.display = 'none';
+  });
+  declineBtn.addEventListener('click', () => {
+    setCookie('terra_bloom_cookie_consent', 'declined', 365);
+    cookieConsentDiv.style.display = 'none';
+  });
+
+  checkConsent();
+</script>
+</body>
+</html>
+
