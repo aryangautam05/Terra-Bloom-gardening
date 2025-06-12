@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms and Conditions | Terra Bloom Gardening</title>
+  <meta name="description" content="Terms and Conditions for Terra Bloom Gardening. Learn about the rules and regulations for using our website and services." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <style>
+    :root {
+      --color-forest-dark: #1b3a24;
+      --color-forest-medium: #2e5f3a;
+      --color-forest-light: #71a478;
+      --color-earth: #e9f1de;
+      --color-text-primary: #2f4f4f;
+      --color-text-secondary: #6b7280;
+      --color-bg: #f4f9f4;
+      --color-accent: #3a9d23;
+      --color-white: #fff;
+      --shadow-light: 0 4px 12px rgba(0,0,0,0.07);
+      --border-radius: 12px;
+      --spacing-unit: 16px;
+      --font-family-primary: 'Inter', sans-serif;
+      --font-family-secondary: 'Poppins', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font-family-primary);
+      background: var(--color-bg);
+      color: var(--color-text-primary);
+      line-height: 1.6;
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+    a {
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover, a:focus {
+      color: var(--color-forest-medium);
+      outline: none;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 64px;
+    }
+    header {
+      background: var(--color-forest-dark);
+      color: var(--color-white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    nav.header-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 90%;
+    }
+    .logo {
+      font-family: var(--font-family-secondary);
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--color-earth);
+      letter-spacing: 1.2px;
+      user-select: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: var(--color-earth);
+      padding: 8px 16px;
+      border-radius: var(--border-radius);
+      font-weight: 600;
+      font-size: 1rem;
+      background: transparent;
+      transition: background-color 0.3s ease;
+    }
+    .nav-links a:hover, .nav-links a:focus {
+      background: var(--color-forest-medium);
+      outline: none;
+    }
+    .mobile-menu-button {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--color-earth);
+      font-size: 2rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    .mobile-menu-button:hover, .mobile-menu-button:focus {
+      color: var(--color-accent);
+      outline: none;
+    }
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background: var(--color-forest-dark);
+      padding: 1rem;
+    }
+    .mobile-nav a {
+      color: var(--color-earth);
+      padding: 12px 0;
+      border-bottom: 1px solid var(--color-forest-medium);
+      font-weight: 600;
+      display: block;
+    }
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, #2e5f3a, #71a478 80%);
+      color: var(--color-earth);
+      padding: 120px 0 80px;
+      overflow: hidden;
+      text-align: center;
+      user-select: none;
+    }
+    .hero h1 {
+      font-family: var(--font-family-secondary);
+      font-size: 3.5rem;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 8px rgba(26,44,14,0.7);
+    }
+    .content-section {
+      background: var(--color-white);
+      border-radius: var(--border-radius);
+      padding: 48px 32px;
+      box-shadow: var(--shadow-light);
+      margin-bottom: 64px;
+    }
+    .content-section h2 {
+      font-size: 2.25rem;
+      color: var(--color-forest-dark);
+      margin-bottom: 24px;
+    }
+    .content-section h3 {
+      font-size: 1.5rem;
+      color: var(--color-forest-medium);
+      margin: 32px 0 16px;
+    }
+    .content-section p {
+      color: var(--color-text-primary);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 12px;
+      text-align: justify;
+    }
+    footer {
+      background: var(--color-forest-dark);
+      color: var(--color-earth);
+      padding: 48px 16px 48px;
+      font-size: 0.9rem;
+    }
+    footer .container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    footer .address {
+      font-weight: 600;
+      color: var(--color-earth);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    footer .phone {
+      font-weight: 600;
+      color: var(--color-earth);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    footer .disclaimer {
+      opacity: 0.8;
+      line-height: 1.4;
+      max-width: 720px;
+    }
+    @media (max-width: 767px) {
+      .nav-links {
+        display: none;
+      }
+      .mobile-menu-button {
+        display: block;
+      }
+      .mobile-nav.show {
+        display: flex;
+      }
+      header nav.header-nav {
+        width: 90%;
+        padding: 0.5rem 0.5rem;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .content-section {
+        padding: 32px 16px;
+        margin-bottom: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header role="banner" aria-label="Primary Navigation">
+    <nav class="header-nav container" role="navigation" aria-label="Main navigation">
+      <div class="logo" tabindex="0">Terra Bloom Gardening</div>
+      <div class="nav-links">
+        <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0"aria-current="page">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+      </div>
+      <button class="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" id="mobile-menu-button">
+        <span class="material-icons" aria-hidden="true">menu</span>
+      </button>
+    </nav>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile Main navigation">
+      <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0"aria-current="page">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+    </nav>
+  </header>
+
+  <section class="hero" role="region" aria-label="Terms and Conditions header">
+    <h1>Terms and Conditions</h1>
+    <p>Please read these Terms and Conditions carefully before using Terra Bloom Gardening services and website.</p>
+  </section>
+
+  <main class="container" role="main">
+    <section class="content-section" aria-label="Terms and Conditions details">
+      <h2>Our Terms and Conditions</h2>
+
+      <!-- 40 points each explained approximately 10 lines -->
+      <h3>1. Acceptance of Terms</h3>
+      <p>By accessing or using Terra Bloom Gardening's website and services, you agree to comply with and be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our services. These terms govern your use and form a binding agreement with Terra Bloom Gardening.</p>
+
+      <h3>2. Services Description</h3>
+      <p>Terra Bloom Gardening provides expert gardening, landscaping, and forestry services aimed at creating beautiful, sustainable outdoor spaces. Service descriptions, pricing, and availability are subject to change without notice. We strive to deliver personalized experiences tailored to client requirements.</p>
+
+      <h3>3. Eligibility</h3>
+      <p>Our services are available to individuals and entities capable of forming legally binding agreements. Users must be over the age of majority in their jurisdiction and not barred from receiving our services under applicable laws.</p>
+
+      <h3>4. Provision of Personal Information</h3>
+      <p>You agree to provide accurate, complete, and up-to-date personal information during interactions with Terra Bloom Gardening. You are responsible for maintaining the confidentiality of account details and for any activities under your account.</p>
+
+      <h3>5. Payment Terms</h3>
+      <p>Payments for services rendered must be made in accordance with provided estimates or contracts. Terra Bloom Gardening accepts payments through specified methods. Late or non-payment may result in service suspension or termination.</p>
+
+      <h3>6. Scheduling and Cancellations</h3>
+      <p>Appointments and service schedules are agreed upon in advance. Cancellation or rescheduling requests should be made within specified timeframes to avoid fees or penalties. Terra Bloom Gardening reserves the right to modify appointments for operational reasons with prior notice.</p>
+
+      <h3>7. Customer Responsibilities</h3>
+      <p>Customers should provide access to the service location and relevant information to facilitate service delivery. Safety and accessibility must be ensured, and customers must inform us of any hazards or special requirements prior to service commencement.</p>
+
+      <h3>8. Service Limitations</h3>
+      <p>While we strive for excellence, Terra Bloom Gardening cannot guarantee specific results due to factors beyond our control such as weather, soil conditions, or plant health. Services exclude damages caused by misuse or negligence from customers.</p>
+
+      <h3>9. Intellectual Property</h3>
+      <p>All content, designs, logos, and materials on the Terra Bloom Gardening website and communications are our intellectual property. Unauthorized use, reproduction, or distribution without written consent is prohibited.</p>
+
+      <h3>10. User-Generated Content</h3>
+      <p>If you submit photos, reviews, or other content to Terra Bloom Gardening, you grant us a non-exclusive license to use this content for marketing and promotional purposes. You confirm that you have the rights to the content you submit.</p>
+
+      <h3>11. Privacy Policy</h3>
+      <p>Your use of our services is also governed by our Privacy Policy, detailing how we collect, use, and protect your personal information. Please review it carefully for a comprehensive understanding of your rights.</p>
+
+      <h3>12. Disclaimer of Warranties</h3>
+      <p>Terra Bloom Gardening provides services "as is" without warranties of any kind either expressed or implied. We disclaim all warranties including merchantability and fitness for a specific purpose.</p>
+
+      <h3>13. Limitation of Liability</h3>
+      <p>To the extent permitted by law, Terra Bloom Gardening is not liable for any indirect, incidental, consequential, or punitive damages arising out of your use of our services or website.</p>
+
+      <h3>14. Indemnification</h3>
+      <p>You agree to indemnify and hold harmless Terra Bloom Gardening and its affiliates against any claims, damages, liabilities, and expenses arising from your violation of these terms or unauthorized use of our services.</p>
+
+      <h3>15. Governing Law</h3>
+      <p>These Terms and Conditions are governed by and construed in accordance with the laws of the jurisdiction in which Terra Bloom Gardening operates, without regard to conflict of law principles.</p>
+
+      <h3>16. Dispute Resolution</h3>
+      <p>In case of disputes, parties agree to attempt resolution through good-faith negotiations. If unresolved, disputes shall be submitted to mediation or binding arbitration as outlined in applicable laws.</p>
+
+      <h3>17. Modification of Terms</h3>
+      <p>We reserve the right to modify these Terms and Conditions at any time. Changes become effective upon posting on our website. Continued use of services constitutes acceptance of the revised terms.</p>
+
+      <h3>18. Termination</h3>
+      <p>Terra Bloom Gardening may terminate or suspend your access to services without prior notice for violations of these terms or other conduct harmful to the company or its customers.</p>
+
+      <h3>19. Force Majeure</h3>
+      <p>We are not responsible for delays or failure to perform caused by events beyond our reasonable control, including natural disasters, pandemics, or government actions.</p>
+
+      <h3>20. Entire Agreement</h3>
+      <p>These Terms and Conditions, along with our Privacy Policy and any specific service agreements, constitute the entire agreement between you and Terra Bloom Gardening regarding your use of our services.</p>
+
+      <h3>21. Headings</h3>
+      <p>Headings used in these Terms and Conditions are for convenience only and do not affect the interpretation of any provision.</p>
+
+      <h3>22. Severability</h3>
+      <p>If any provision of these terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary, and the remaining provisions will remain in full force and effect.</p>
+
+      <h3>23. Waiver</h3>
+      <p>Failure to enforce any provision of these Terms and Conditions shall not constitute a waiver of our right to enforce such provision or any other provision.</p>
+
+      <h3>24. Accessibility</h3>
+      <p>We strive to ensure our website and services are accessible to all users regardless of disability. Contact us if you experience difficulties accessing information or features.</p>
+
+      <h3>25. Intellectual Property Rights Infringement</h3>
+      <p>We respect intellectual property rights. If you believe your rights have been infringed upon on our platform, please notify us promptly with details for investigation.</p>
+
+      <h3>26. User Conduct</h3>
+      <p>You agree to use the website and services responsibly and lawfully, refraining from harmful, abusive, or unlawful behavior that may negatively impact Terra Bloom Gardening or others.</p>
+
+      <h3>27. Content Accuracy</h3>
+      <p>We endeavor to provide accurate and current information but do not guarantee the completeness or reliability of content on our website or communications.</p>
+
+      <h3>28. Affiliate Links</h3>
+      <p>Our website may contain affiliate links to products or services. These help support our operations but do not influence our impartiality or service quality.</p>
+
+      <h3>29. Customer Testimonials</h3>
+      <p>Testimonials on our website represent real customers’ experiences but do not guarantee similar outcomes for every client.</p>
+
+      <h3>30. Submissions</h3>
+      <p>If you submit suggestions, feedback, or other content to us, you grant Terra Bloom Gardening a royalty-free, worldwide license to use, reproduce, and distribute it.</p>
+
+      <h3>31. Refund Policy</h3>
+      <p>Refund requests will be considered in accordance with the terms agreed upon in service contracts and applicable consumer protection laws.</p>
+
+      <h3>32. Pricing Changes</h3>
+      <p>Prices for services are subject to change at our discretion and will be communicated prior to any change affecting booked services.</p>
+
+      <h3>33. Third-Party Services</h3>
+      <p>Some services may require third-party involvement, and we do not guarantee the performance or availability of such services.</p>
+
+      <h3>34. User Feedback</h3>
+      <p>We welcome user feedback to improve our offerings and may use it for promotional purposes, respecting privacy and attribution preferences.</p>
+
+      <h3>35. Disclaimer of Liability</h3>
+      <p>Terra Bloom Gardening is not liable for incidental or consequential damages arising from use or inability to use our services or website.</p>
+
+      <h3>36. Legal Compliance</h3>
+      <p>Users must comply with all applicable laws when using our services. Illegal use is strictly prohibited and may result in termination.</p>
+
+      <h3>37. Headings</h3>
+      <p>Section headings are provided for convenience and do not define, limit, or expand the scope of any Terms or Conditions herein.</p>
+
+      <h3>38. Contact & Support</h3>
+      <p>For assistance, questions, or concerns regarding these Terms, please contact our support team via email or phone.</p>
+
+      <h3>39. Processing Personal Data</h3>
+      <p>Our handling of your personal data complies with our Privacy Policy which outlines your rights and our obligations.</p>
+
+      <h3>40. Effective Date</h3>
+      <p>These Terms and Conditions are effective upon posting on our website and supersede all prior agreements related to Terra Bloom Gardening’s services.</p>
+    </section>
+  </main>
+
+  <footer role="contentinfo" aria-label="Footer with company information, address, phone number, and disclaimer">
+    <div class="container">
+      <address class="address" aria-label="Physical address">
+        <span class="material-icons" aria-hidden="true" style="vertical-align:middle;">location_on</span>
+        13 Washington Square S, New York, NY 10012, USA
+      </address>
+      <div class="phone" aria-label="Contact phone number">
+        <span class="material-icons" aria-hidden="true" style="vertical-align:middle;">phone</span>
+        +1 (555) 123-4567
+      </div>
+      <div class="disclaimer" aria-live="polite" aria-atomic="true" tabindex="0">
+        <strong>Disclaimer:</strong> The information provided on this website is for general informational purposes only. Terra Bloom Gardening is not responsible for any outcomes resulting from the use of the information herein. Please consult a gardening or forestry professional for personalized advice and services.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('show');
+    });
+    window.addEventListener('resize', () => {
+      if(window.innerWidth > 767) {
+        mobileMenu.classList.remove('show');
+        menuButton.setAttribute('aria-expanded', false);
+      }
+    });
+  </script>
+</body>
+</html>
+
